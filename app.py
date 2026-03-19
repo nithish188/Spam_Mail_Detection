@@ -793,17 +793,17 @@ def get_metrics():
         }
     return {'accuracy': 95.0, 'precision': 95.0, 'recall': 95.0, 'f1': 95.0}
 
-def generate_sample_activity():
-    """Generate sample recent activity for the dashboard"""
-    activities = [
-        {"icon": "🚨", "bg": "#fef2f2", "title": "Spam Detected", "desc": "Phishing attempt blocked", "time": "2 min ago", "badge": "Spam", "badge_bg": "#fef2f2", "badge_color": "#ef4444"},
-        {"icon": "✅", "bg": "#f0fdf4", "title": "Email Verified", "desc": "Newsletter confirmed safe", "time": "5 min ago", "badge": "Safe", "badge_bg": "#f0fdf4", "badge_color": "#22c55e"},
-        {"icon": "🚨", "bg": "#fef2f2", "title": "Bulk Spam Caught", "desc": "Prize scam campaign flagged", "time": "12 min ago", "badge": "Spam", "badge_bg": "#fef2f2", "badge_color": "#ef4444"},
-        {"icon": "✅", "bg": "#f0fdf4", "title": "Email Verified", "desc": "Meeting invite from team", "time": "18 min ago", "badge": "Safe", "badge_bg": "#f0fdf4", "badge_color": "#22c55e"},
-        {"icon": "⚠️", "bg": "#fffbeb", "title": "Suspicious Email", "desc": "Low confidence detection", "time": "25 min ago", "badge": "Review", "badge_bg": "#fffbeb", "badge_color": "#f59e0b"},
-        {"icon": "✅", "bg": "#f0fdf4", "title": "Email Verified", "desc": "Project report from manager", "time": "30 min ago", "badge": "Safe", "badge_bg": "#f0fdf4", "badge_color": "#22c55e"},
-    ]
-    return activities
+# def generate_sample_activity():
+#     """Generate sample recent activity for the dashboard"""
+#     activities = [
+#         {"icon": "🚨", "bg": "#fef2f2", "title": "Spam Detected", "desc": "Phishing attempt blocked", "time": "2 min ago", "badge": "Spam", "badge_bg": "#fef2f2", "badge_color": "#ef4444"},
+#         {"icon": "✅", "bg": "#f0fdf4", "title": "Email Verified", "desc": "Newsletter confirmed safe", "time": "5 min ago", "badge": "Safe", "badge_bg": "#f0fdf4", "badge_color": "#22c55e"},
+#         {"icon": "🚨", "bg": "#fef2f2", "title": "Bulk Spam Caught", "desc": "Prize scam campaign flagged", "time": "12 min ago", "badge": "Spam", "badge_bg": "#fef2f2", "badge_color": "#ef4444"},
+#         {"icon": "✅", "bg": "#f0fdf4", "title": "Email Verified", "desc": "Meeting invite from team", "time": "18 min ago", "badge": "Safe", "badge_bg": "#f0fdf4", "badge_color": "#22c55e"},
+#         {"icon": "⚠️", "bg": "#fffbeb", "title": "Suspicious Email", "desc": "Low confidence detection", "time": "25 min ago", "badge": "Review", "badge_bg": "#fffbeb", "badge_color": "#f59e0b"},
+#         {"icon": "✅", "bg": "#f0fdf4", "title": "Email Verified", "desc": "Project report from manager", "time": "30 min ago", "badge": "Safe", "badge_bg": "#f0fdf4", "badge_color": "#22c55e"},
+#     ]
+#     return activities
 
 # ─────────────────────────────────────────────
 # PAGE ROUTING
