@@ -930,34 +930,34 @@ if page == "dashboard":
             </div>
             """, unsafe_allow_html=True)
 
-    with side_col:
-        # Recent Activity
-        activities = generate_sample_activity()
-        activity_html = ""
-        for act in activities:
-            activity_html += f"""
-            <div class="activity-item">
-                <div style="font-size: 18px; flex-shrink: 0;">{act['icon']}</div>
-                <div class="activity-content">
-                    <p class="activity-title">{act['title']}</p>
-                    <p class="activity-desc">{act['desc']}</p>
-                </div>
-                <div style="text-align: right;">
-                    <span class="activity-badge" style="background: {act['badge_bg']}; color: {act['badge_color']};">{act['badge']}</span>
-                    <p class="activity-time" style="margin: 4px 0 0 0;">{act['time']}</p>
-                </div>
-            </div>
-            """
+    # with side_col:
+    #     # Recent Activity
+    #     activities = generate_sample_activity()
+    #     activity_html = ""
+    #     for act in activities:
+    #         activity_html += f"""
+    #         <div class="activity-item">
+    #             <div style="font-size: 18px; flex-shrink: 0;">{act['icon']}</div>
+    #             <div class="activity-content">
+    #                 <p class="activity-title">{act['title']}</p>
+    #                 <p class="activity-desc">{act['desc']}</p>
+    #             </div>
+    #             <div style="text-align: right;">
+    #                 <span class="activity-badge" style="background: {act['badge_bg']}; color: {act['badge_color']};">{act['badge']}</span>
+    #                 <p class="activity-time" style="margin: 4px 0 0 0;">{act['time']}</p>
+    #             </div>
+    #         </div>
+    #         """
 
-        st.markdown(f"""
-        <div class="content-card" style="height: 100%;">
-            <div class="card-header">
-                <p class="card-title">Recent Activity</p>
-                <span style="font-size: 0.8em; color: #4361ee; font-weight: 600; cursor: pointer;">View All</span>
-            </div>
-            {activity_html}
-        </div>
-        """, unsafe_allow_html=True)
+    #     st.markdown(f"""
+    #     <div class="content-card" style="height: 100%;">
+    #         <div class="card-header">
+    #             <p class="card-title">Recent Activity</p>
+    #             <span style="font-size: 0.8em; color: #4361ee; font-weight: 600; cursor: pointer;">View All</span>
+    #         </div>
+    #         {activity_html}
+    #     </div>
+    #     """, unsafe_allow_html=True)
 
 
 # ═══════════════════════════════════════════════
